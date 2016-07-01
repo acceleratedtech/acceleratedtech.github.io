@@ -15,4 +15,8 @@ description:
 
 ---
 <p>Connectal applications declare hardware/software interfaces using an IDL.<p>
-<p>Connectal supports Xilinx and Altera FPGAs, Intel, ARM, and RISC-V processors, and C, C++, and python applications.</p>
+<p>
+Connectal supports Xilinx and Altera FPGAs, Intel, ARM, and RISC-V
+processors, and C, C++, and python applications running on Ubuntu,
+Android, and Yocto.
+</p>
