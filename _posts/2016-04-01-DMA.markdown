@@ -1,0 +1,18 @@
+---
+layout: default
+modal-id: 2
+date: 2016-05-01
+img: submarine.png
+alt: PCIE DMA
+technology: PCIE DMA
+category: PCIE DMA
+blurb:
+- I have a project requiring transferring data to FPGAs via PCI Express
+description:
+- Accelerated Tech, Inc has developed a high bandwidth DMA Controller
+  for use with PCI Express to enable fast transfer of data between
+  your logic and your application.
+
+
+---
+
