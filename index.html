@@ -50,25 +50,32 @@ h1 {
   padding-bottom: 0.2em;
 }
 
-h1.heroic {
-  font-weight: 600;
-}
 
 h2 {
   font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
   Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 400;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 2em;
+  font-size: 2.2em;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
+  font-size: 1.8em;
 }
+
 
 .footer-col h3 {
   font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
   Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.5em;
 }
 
 section {
@@ -78,37 +85,37 @@ section {
 
 /* "And if you thought that was bad..." */
 body {
-  background: #e8e8ff;
+  background: #f7f7f7;
 }
 
 body > .container {
-  background: #e8e8ff;
+  background: #f7f7f7;
 }
 
 body > .navcontainer {
-  background: #d0d0ff;
-  border-bottom: 1px solid;
-  border-color: #c0c0ff;
+  background: #f1f1f1;
+/*  border-bottom: 1px solid;
+  border-color: #c0c0ff;*/
 }
 
 @media (max-width: 992px) { /* Or, as Bootstrap calls it, "lg". */
   body > .navcontainer {
-    border-left: 1px solid;
+/*    border-left: 1px solid;
     border-right: 1px solid;
-    border-color: #c0c0ff;
+    border-color: #c0c0ff;*/
   }
 }
 
 
 @media (min-width: 992px) { /* Or, as Bootstrap calls it, "lg". */
   body {
-    background: #f0f0ff;
+    background: #fff3ed;
   }
   
   body > .container {
     border-left: 1px solid;
     border-right: 1px solid;
-    border-color: #c0c0ff;
+    border-color: #ffddcf;
   }
 }
 
@@ -119,10 +126,190 @@ body > .navcontainer {
 }
 
 body > .footer-container {
-  border-top: 1px solid;
-  border-color: #c0c0ff;
   padding-top: 2em;
-  background: #d0d0ff;
+  background: #383838;
+  color: #ffffff;
+}
+
+.navbar-brand img {
+  height: 1.5em;
+}
+
+.row.hero {
+  background: #ff9567;
+  background-image: url("face.svg");
+  background-position: 95% 42%;
+  background-size: auto 220%;
+  background-repeat: no-repeat;
+}
+
+.hero h1 {
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 1.8em;
+  padding-bottom: 1.8em;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.row.lighter {
+  background: #ffffff;
+}
+
+.minihero h2 {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.3em;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.imageholder {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 400;
+  padding-bottom: 2em;
+}
+.imageholder img {
+  height: 10em;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 1em;
+}
+
+.services h3 {
+  padding-bottom: 1em;
+}
+
+.services p {
+  padding-bottom: 4em;
+}
+
+.thebutton {
+  text-align: center;
+  padding-bottom: 4em;
+}
+
+.btn-huge, .btn-group-lg > .btn {
+  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  padding: 0.4rem 0.9rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  border-width: 2px;
+}
+
+.btn-xwide {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.btn-outline-accelerated {
+  color: #fd7338;
+  background-color: transparent;
+  background-image: none;
+  border-color: #fd7338;
+}
+
+.btn-outline-accelerated:hover {
+  color: #fff;
+  background-color: #fd7338;
+  border-color: #fd7338;
+}
+
+.btn-outline-accelerated:focus, .btn-outline-accelerated.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-outline-accelerated.disabled, .btn-outline-accelerated:disabled {
+  color: #007bff;
+  background-color: transparent;
+}
+
+.btn-outline-accelerated:not(:disabled):not(.disabled):active, .btn-outline-accelerated:not(:disabled):not(.disabled).active,
+.show > .btn-outline-accelerated.dropdown-toggle {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-accelerated:not(:disabled):not(.disabled):active:focus, .btn-outline-accelerated:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-accelerated.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-accelerated {
+  color: #fff;
+  background-color: #fd7338;
+  border-color: #fd7338;
+}
+
+.btn-accelerated:hover {
+  color: #fff;
+  background-color: #ec6227;
+  border-color: #ec6227;
+}
+
+.btn-accelerated:focus, .btn-accelerated.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-accelerated.disabled, .btn-accelerated:disabled {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-accelerated:not(:disabled):not(.disabled):active, .btn-accelerated:not(:disabled):not(.disabled).active,
+.show > .btn-accelerated.dropdown-toggle {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.btn-accelerated:not(:disabled):not(.disabled):active:focus, .btn-accelerated:not(:disabled):not(.disabled).active:focus,
+.show > .btn-accelerated.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.headshots ul {
+  text-align: center;
+  list-style: none;
+  flex-direction: row;
+}
+
+.headshots ul li {
+  display: inline-block;
+  margin-left: 140px;
+}
+
+.headshots ul li:first-child {
+  margin-left: 0px;
+} 
+
+.headshots ul li img {
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 0.8em;
+}
+
+div.headshots {
+  margin-top: -2em;
+  padding-bottom: 1em;
+}
+
+.services form {
+  margin-top: -3em;
 }
 
     </style>
@@ -131,12 +318,14 @@ body > .footer-container {
     <div class="container sticky-top navcontainer">
       <nav class="navbar navbar-expand-sm navbar-light sticky-top">
         <div class="navbar-header">
-          <a class="navbar-brand" href="/">Accelerated Tech, Inc.</a>
+          <!-- XXX: replace logo with higher resolution -->
+          <a class="navbar-brand" href="/"><img src="AT-logo-black-med.png" alt="Accelerated Tech"></a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#who">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -144,143 +333,203 @@ body > .footer-container {
     </div>
 
     <div class="container">
-      <div class="row"><div class="col-12 col-xl-10 offset-xl-1">
-        <section id="about">
-          <h1 class="heroic">
-            Accelerated Tech helps you solve your low-level systems
-            engineering challenges.
+      <div class="row hero"><div class="col-12 col-xl-10 offset-xl-1">
+        <section id="top">
+          <h1>
+            Designing custom hardware for your application is difficult.  We
+            can help.
           </h1>
-          <p>
-            Accelerated Tech has a wide range of engineering experience
-            ready to apply to your challenge.  Our expertise in FPGA design
-            and implementation is available to assist you with building
-            custom accelerators and peripherals, and our command of Bluespec
-            SystemVerilog allows us to efficiently build parameterized
-            designs that integrate our PCIe or NVMe cores directly into your
-            application.  We also have extensive knowledge of the internals
-            of the Linux kernel, and have a proven track record of building
-            engaged communities surrounding open source projects.  All of
-            this powers our ability to build complete integrated solutions
-            to meet your needs &mdash; if you have a project that requires
-            both hardware and software development, <a
-            href="#contact">Accelerated Tech is ready to work with you</a>!
-          </p>
         </section>
       </div></div>
-      
-      <section id="solutions">
-        <div class="row"><div class="col-12 col-xl-10 offset-xl-1">
-          <h1>How can Accelerated Tech help you?</h1>
-        </div></div>
-        
-        <div class="row">
-          <div class="col-12 col-md-6 col-xl-5 offset-xl-1">
-            <h2>Connecting hardware to software</h2>
-            <p>
-              Accelerated Tech's <a
-              href="http://www.connectal.org/">Connectal</a> platform makes it
-              easy to connect software to hardware at all stages of development. 
-              Connectal applications declare hardware-software interfaces using
-              an IDL to make wiring up your design quick and easy.  Connectal
-              supports Xilinx and Altera FPGAs; Intel, ARM, and RISC-V
-              processors; and C, C++, and Python applications, running on
-              Ubuntu, Android, and Yocto.
-            </p>
-
-            <h2>RISC-V virtual prototyping</h2>
-            <p>
-              If you are developing peripherals or accelerators for a SoC, you
-              as early of a start on software development as you can.  We can
-              connect software running in QEMU to your application logic running
-              on a simulator, or on an FPGA.
-            </p>
-          </div>
-            
-          <div class="col-12 col-md-6 col-xl-5">
-            <h2>Design and implementation</h2>
-            <p>
-              We use Connectal and Bluespec SystemVerilog to develop
-              hardware/software solutions to fit your needs, delivering BSV,
-              Verilog, bitstreams, and user-mode libraries in source or
-              executable form.
-            </p>
-
-            <h2>NVMe storage and PCIe DMA</h2>
-            <p>
-              Accelerated Tech has high-bandwidth NVMe accelerator and
-              PCI Express DMA controller cores available to enable fast data
-              transfer between your logic and your application &mdash; and to provide
-              extremely fast access to large amounts of external data attached
-              directly to your FPGA design.
-            </p>
-          </div>
+      <div class="row minihero lighter"><div class="col-12 col-xl-10 offset-xl-1">
+        <h2>Accelerated Tech helps you solve your low-level engineering
+        problems with expert knowledge.</h2>
+      </div></div>
+      <div class="row lighter">
+        <div class="col-12 col-md-4 imageholder">
+          <img src="https://via.placeholder.com/400x400">
+          Hardware design
         </div>
-      </section>
-      
-      <div class="row"><div class="col-12 col-xl-10 offset-xl-1">
-        <section id="who">
-          <h1>Who is Accelerated Tech?</h1>
+        <div class="col-12 col-md-4 imageholder">
+          <img src="https://via.placeholder.com/400x400">
+          Hardware and application interconnect
+        </div>
+        <div class="col-12 col-md-4 imageholder">
+          <img src="https://via.placeholder.com/400x400">
+          Software development
+        </div>
+      </div>
+      <div class="row lighter">
+        <div class="col-12 col-xl-10 offset-xl-1">
+          <section id="solutions">
+           <h2>Services</h2>
+          </section>
+        </div>
+      </div>
+      <div class="row lighter services">
+        <div class="col-12 col-md-6 col-xl-5 offset-xl-1">
+          <h3>Custom hardware implementation</h3>
           <p>
-            Accelerated Tech is <a
-            href="https://www.linkedin.com/in/jameyhicks">Jamey Hicks</a>
-            and <a href="https://www.linkedin.com/in/joshuaawise">Joshua
-            Wise</a>, applying their hardware and software skills to build
-            accelerated solutions to your problems.  With their combined
-            track record of success building systems at organizations
-            including NVIDIA, HP Labs, and Quanta Research, Accelerated Tech
-            is prepared to work with you on your challenges of any scale.
+            Whether you want the speed of custom RTL, or whether you're
+            looking to harness the adaptability of high-level synthesis, we
+            can use the power of FPGAs to accelerate your applications.
           </p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-5">
+          <h3>Design space exploration</h3>
+          <p>
+            We help you determine the best way to get the best results for
+            your application, whether that be on a cluster of CPUs, on GPU
+            hardware, or with a custom FPGA-based design.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-5 offset-xl-1">
+          <h3>System implementation</h3>
+          <p>
+            If you need more than just a computational accelerator, we can
+            help.  We can build an entire system, including a full software
+            stack based on Ubuntu, Android, or Yocto.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-5">
+          <h3>Research engagements</h3>
+          <p>
+            Your team is exploring the limits of what's possible, and is
+            building something new and exciting.  We can work with you to
+            make your efforts a success.
+          </p>
+        </div>
+      </div>
+      <div class="row lighter">
+        <div class="col-12 thebutton">
+          <a class="btn btn-outline-accelerated btn-huge" href="#contact" role="button">Tell us
+          about your project &gt;</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-xl-10 offset-xl-1">
+          <h2>Technologies</h2>
+        </div>
+      </div>
+      <div class="row services">
+        <div class="col-12 col-md-6 col-xl-5 offset-xl-1">
+          <h3>RISC-V</h3>
+          <p>
+            Blah blah blah a processor blah blah blah use it or extend it
+            blah blah blah open solutions blah blah blah.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-5">
+          <h3>Connectal</h3>
+          <p>
+            Blah blah blah <a href="http://www.connectal.org/">Connectal</a> platform makes it
+            easy to connect software to hardware at all stages of development. 
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-5 offset-xl-1">
+          <h3>Bluespec SystemVerilog</h3>
+          <p>
+            Blah blah blah quick design of high-performance custom hardware
+            blah blah blah generates RTL blah blah.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-5">
+          <h3>High-Level Synthesis</h3>
+          <p>
+            High-Level Synthesis, or HLS, is a tool that allows us to
+            quickly iterate on a design.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-5 offset-xl-1">
+          <h3>PCIe and NVMe</h3>
+          <p>
+            Blah blah blah get data into an FPGA blah blah blah big data
+            blah blah blah IP.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-5">
+          <h3>Open platforms</h3>
+          <p>
+            Blah blah blah Linux kernel development blah blah open platforms
+            blah blah years of experience.
+          </p>
+        </div>
+      </div>
+      
+      <div class="row lighter"><div class="col-12 col-xl-10 offset-xl-1">
+        <section id="who">
+          <h2>Who is Accelerated Tech?</h2>
         </section>
       </div></div>
+      <div class="row lighter headshots">
+        <div class="col-6 col-xl-10 offset-xl-1">
+          <ul class="headshots">
+            <li>
+              <a href="https://www.linkedin.com/in/jameyhicks">
+                <img src="jamey.jpg" class="rounded-circle" alt="Jamey Hicks">
+                <div class="text-center">Jamey Hicks</div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/joshuaawise">
+                <img src="joshua.jpg" class="rounded-circle" alt="Joshua Wise">
+                <div class="text-center">Joshua Wise</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row lighter"><div class="col-12 col-xl-10 offset-xl-1">
+          <p>
+            Jamey and Joshua combine hardware and software skills to build
+            accelerated solutions to your problems.  They have a track
+            record of success at organizations including NVIDIA, HP Labs,
+            and Quanta Research, and are prepared to work with you on your
+            challenges of any scale.
+          </p>
+      </div></div>
       
-      <div class="row"> <div class="col-12 col-xl-10 offset-xl-1">
+      <div class="row lighter services"><div class="col-12 col-xl-10 offset-xl-1">
         <section id="contact">
-          <div class="row">
-            <div class="col-lg-12">
-              <h1>Get in touch</h1>
+          <h2>Get in touch</h2>
+        </section>
+        <form action="//formspree.io/info@accelerated.tech"
+              method="POST" name="sentMessage" id="contactForm" novalidate>
+          <input type="hidden" name="_subject" value="Contact from
+            accelerated.tech">
+          <input type="hidden" name="_gotcha">
+          <div class="form-row control-group">
+            <div class="form-group col-12 floating-label-form-group controls">
+              <label class="sr-only">Name</label>
+              <input class="form-control" id="name" name="name"
+              placeholder="Name" data-validation-required-message="Please
+              enter your name.">
             </div>
           </div>
-          <div class="row"><div class="col-lg-12">
-            <form action="//formspree.io/info@accelerated.tech"
-                  method="POST" name="sentMessage" id="contactForm" novalidate>
-              <input type="hidden" name="_subject" value="Contact from
-                accelerated.tech">
-              <input type="hidden" name="_gotcha">
-              <div class="form-row control-group">
-                <div class="form-group col-12 floating-label-form-group controls">
-                  <label class="sr-only">Name</label>
-                  <input class="form-control" id="name" name="name"
-                  placeholder="Name" data-validation-required-message="Please
-                  enter your name.">
-                </div>
-              </div>
-              <div class="form-row control-group">
-                <div class="form-group col-12 floating-label-form-group controls">
-                  <label class="sr-only">E-mail address</label>
-                  <input class="form-control" id="email" name="_replyto"
-                  placeholder="E-mail address" data-validation-required-message="Please
-                  enter your e-mail address.">
-                </div>
-              </div>
-              <div class="form-row control-group">
-                <div class="form-group col-12 floating-label-form-group controls">
-                  <label class="sr-only">Message</label>
-                  <textarea rows="5" class="form-control" id="message"
-                  name="message"
-                  placeholder="Message" data-validation-required-message="Please
-                  enter a message."></textarea>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-12">
-                  <button type="submit" class="btn btn-primary">Send</button>
-                </div>
-              </div>
-            </form>
-          </div></div>
-        </section>
+          <div class="form-row control-group">
+            <div class="form-group col-12 floating-label-form-group controls">
+              <label class="sr-only">E-mail address</label>
+              <input class="form-control" id="email" name="_replyto"
+              placeholder="E-mail address" data-validation-required-message="Please
+              enter your e-mail address.">
+            </div>
+          </div>
+          <div class="form-row control-group">
+            <div class="form-group col-12 floating-label-form-group controls">
+              <label class="sr-only">Message</label>
+              <textarea rows="5" class="form-control" id="message"
+              name="message"
+              placeholder="How can we help?" data-validation-required-message="Please
+              enter a message."></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-12 thebutton">
+              <button type="submit" class="btn btn-accelerated btn-huge btn-xwide">Send</button>
+            </div>
+          </div>
+        </form>
       </div></div>
-      
     </div>
       
     <div class="container footer-container">
