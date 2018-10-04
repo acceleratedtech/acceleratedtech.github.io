@@ -1,0 +1,334 @@
+/*
+ * Please excuse the CSS monstrosity.  As it turns out, excellence in
+ * digital system design does not, by default, qualify one for excellence in
+ * web implementation.  I am, in fact, very acutely aware of the "wrong in
+ * any language" level of disorganization present here...
+ */
+
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+}
+
+nav {
+  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+}
+
+/* "Grumble." */
+@media (min-width: 576px) { /* Or, as Bootstrap calls it, "sm". */
+  nav {
+    font-size: 1.3rem;
+  }
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+
+h1 {
+  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
+  padding-top: 0.5em;
+  padding-bottom: 0.2em;
+}
+
+
+h2 {
+  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 600;
+  text-align: center;
+  padding-top: 1.4em;
+  padding-bottom: 0.9em;
+  font-size: 2.2em;
+}
+
+h3 {
+  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
+  font-size: 1.8em;
+}
+
+
+.footer-col h3 {
+  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.5em;
+}
+
+section {
+  padding-bottom: 0.9em;
+}
+
+
+/* "And if you thought that was bad..." */
+body {
+  background: #fff3ed;
+}
+
+body > .container {
+  background: #f7f7f7;
+}
+
+body > .navcontainer {
+  background: #f1f1f1;
+}
+
+@media (min-width: 992px) { /* Or, as Bootstrap calls it, "lg". */
+  body {
+    background: #fff3ed;
+  }
+  
+  body > .container {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: #ffddcf;
+  }
+}
+
+.footer-copystick {
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  font-size: .8em;
+}
+
+body > .footer-container {
+  padding-top: 2em;
+  background: #383838;
+  color: #ffffff;
+}
+
+.navbar-brand img {
+  height: 1.5em;
+}
+
+.row.hero {
+  background: #ff9567;
+  background-image: url("face.svg");
+  background-repeat: no-repeat;
+  background-position: 190px 52%;
+  background-size: auto 220%;
+}
+
+@media (min-width: 768px) { /* Or, as Bootstrap calls it, "sm". */
+  .row.hero {
+    background-position: 130% 42%;
+    background-size: auto 220%;
+  }
+}
+
+@media (min-width: 992px) { /* Or, as Bootstrap calls it, "lg". */
+  .row.hero {
+    background-position: 95% 42%;
+    background-size: auto 220%;
+  }
+}
+
+.hero h1 {
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 1.8em;
+  padding-bottom: 1.8em;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.row.lighter {
+  background: #ffffff;
+}
+
+.minihero h2 {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.3em;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 2.5em;
+}
+
+.imageholder {
+  font-family: "Dosis";
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-top: 0.3em;
+  padding-bottom: 3em;
+}
+
+.services h3 {
+  padding-bottom: 0.8em;
+  text-align: center;
+}
+
+@media (min-width: 992px) { /* Or, as Bootstrap calls it, "lg". */
+  .services h3 {
+    text-align: left;
+  }
+}
+
+.services p {
+  padding-bottom: 3em;
+}
+
+.thebutton {
+  text-align: center;
+  padding-bottom: 4em;
+}
+
+.btn-huge, .btn-group-lg > .btn {
+  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  padding: 0.4rem 0.9rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  border-width: 2px;
+}
+
+.btn-xwide {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.btn-outline-accelerated {
+  color: #fd7338;
+  background-color: #fff;
+  background-image: none;
+  border-color: #fd7338;
+}
+
+.btn-outline-accelerated:hover {
+  color: #fff;
+  background-color: #fd7338;
+  border-color: #fd7338;
+}
+
+.btn-outline-accelerated:focus, .btn-outline-accelerated.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-outline-accelerated.disabled, .btn-outline-accelerated:disabled {
+  color: #007bff;
+  background-color: transparent;
+}
+
+.btn-outline-accelerated:not(:disabled):not(.disabled):active, .btn-outline-accelerated:not(:disabled):not(.disabled).active,
+.show > .btn-outline-accelerated.dropdown-toggle {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-accelerated:not(:disabled):not(.disabled):active:focus, .btn-outline-accelerated:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-accelerated.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-accelerated {
+  color: #fff;
+  background-color: #fd7338;
+  border-color: #fd7338;
+}
+
+.btn-accelerated:hover {
+  color: #fff;
+  background-color: #ec6227;
+  border-color: #ec6227;
+}
+
+.btn-accelerated:focus, .btn-accelerated.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-accelerated.disabled, .btn-accelerated:disabled {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-accelerated:not(:disabled):not(.disabled):active, .btn-accelerated:not(:disabled):not(.disabled).active,
+.show > .btn-accelerated.dropdown-toggle {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.btn-accelerated:not(:disabled):not(.disabled):active:focus, .btn-accelerated:not(:disabled):not(.disabled).active:focus,
+.show > .btn-accelerated.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.headshots ul {
+  text-align: center;
+  list-style: none;
+  flex-direction: row;
+}
+
+.headshots ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.headshots ul li:first-child {
+  margin-left: -35px; /* XXX: what gives? */
+} 
+
+.headshots ul li img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 0.8em;
+}
+
+@media (min-width: 576px) { /* Or, as Bootstrap calls it, "sm". */
+  .headshots ul li {
+    margin-left: 80px;
+  }
+  
+  .headshots ul li:first-child {
+    margin-left: -40px;
+  }
+  
+  .headshots ul li img {
+    max-width: 200px;
+  }
+}
+
+
+@media (min-width: 992px) { /* Or, as Bootstrap calls it, "sm". */
+  .headshots ul li {
+    margin-left: 140px;
+  }
+  
+  .headshots ul li:first-child {
+    margin-left: -70px;
+  }
+  
+  .headshots ul li img {
+    max-width: 250px;
+  }
+}
+
+div.headshots {
+  padding-bottom: 1em;
+}

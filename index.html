@@ -6,326 +6,20 @@
     <title>Accelerated Tech, Inc.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="accelerated.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600|Open+Sans" rel="stylesheet">
-    <style>
-
-/*
- * Please excuse the inline CSS.  As it turns out, excellence in digital
- * system design does not qualify one for excellence in web design.
- */
-
-body {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 400;
-}
-
-nav {
-  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 400;
-}
-
-/* "Grumble." */
-@media (min-width: 576px) { /* Or, as Bootstrap calls it, "sm". */
-  nav {
-    font-size: 1.3rem;
-  }
-}
-
-.navbar-brand {
-  font-weight: 600;
-  font-size: 1.5rem;
-}
-
-
-h1 {
-  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 500;
-  padding-top: 0.5em;
-  padding-bottom: 0.2em;
-}
-
-
-h2 {
-  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 600;
-  text-align: center;
-  padding-top: 1.5em;
-  padding-bottom: 2em;
-  font-size: 2.2em;
-}
-
-h3 {
-  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 500;
-  font-size: 1.8em;
-}
-
-
-.footer-col h3 {
-  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.5em;
-}
-
-section {
-  padding-bottom: 0.9em;
-}
-
-
-/* "And if you thought that was bad..." */
-body {
-  background: #f7f7f7;
-}
-
-body > .container {
-  background: #f7f7f7;
-}
-
-body > .navcontainer {
-  background: #f1f1f1;
-/*  border-bottom: 1px solid;
-  border-color: #c0c0ff;*/
-}
-
-@media (max-width: 992px) { /* Or, as Bootstrap calls it, "lg". */
-  body > .navcontainer {
-/*    border-left: 1px solid;
-    border-right: 1px solid;
-    border-color: #c0c0ff;*/
-  }
-}
-
-
-@media (min-width: 992px) { /* Or, as Bootstrap calls it, "lg". */
-  body {
-    background: #fff3ed;
-  }
-  
-  body > .container {
-    border-left: 1px solid;
-    border-right: 1px solid;
-    border-color: #ffddcf;
-  }
-}
-
-.footer-copystick {
-  padding-top: 1em;
-  padding-bottom: 1.5em;
-  font-size: .8em;
-}
-
-body > .footer-container {
-  padding-top: 2em;
-  background: #383838;
-  color: #ffffff;
-}
-
-.navbar-brand img {
-  height: 1.5em;
-}
-
-.row.hero {
-  background: #ff9567;
-  background-image: url("face.svg");
-  background-position: 95% 42%;
-  background-size: auto 220%;
-  background-repeat: no-repeat;
-}
-
-.hero h1 {
-  font-weight: 500;
-  text-align: center;
-  color: #ffffff;
-  padding-top: 1.8em;
-  padding-bottom: 1.8em;
-}
-
-.navbar-expand-sm .navbar-nav .nav-link {
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-.row.lighter {
-  background: #ffffff;
-}
-
-.minihero h2 {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.3em;
-  font-weight: 400;
-  text-align: center;
-  padding-top: 3em;
-  padding-bottom: 3em;
-}
-
-.imageholder {
-  text-align: center;
-  font-size: 1.3em;
-  font-weight: 400;
-  padding-bottom: 2em;
-}
-.imageholder img {
-  height: 10em;
-  margin: 0 auto;
-  display: block;
-  padding-bottom: 1em;
-}
-
-.services h3 {
-  padding-bottom: 1em;
-}
-
-.services p {
-  padding-bottom: 4em;
-}
-
-.thebutton {
-  text-align: center;
-  padding-bottom: 4em;
-}
-
-.btn-huge, .btn-group-lg > .btn {
-  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  padding: 0.4rem 0.9rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 1.5;
-  border-radius: 0.3rem;
-  border-width: 2px;
-}
-
-.btn-xwide {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.btn-outline-accelerated {
-  color: #fd7338;
-  background-color: transparent;
-  background-image: none;
-  border-color: #fd7338;
-}
-
-.btn-outline-accelerated:hover {
-  color: #fff;
-  background-color: #fd7338;
-  border-color: #fd7338;
-}
-
-.btn-outline-accelerated:focus, .btn-outline-accelerated.focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-}
-
-.btn-outline-accelerated.disabled, .btn-outline-accelerated:disabled {
-  color: #007bff;
-  background-color: transparent;
-}
-
-.btn-outline-accelerated:not(:disabled):not(.disabled):active, .btn-outline-accelerated:not(:disabled):not(.disabled).active,
-.show > .btn-outline-accelerated.dropdown-toggle {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-.btn-outline-accelerated:not(:disabled):not(.disabled):active:focus, .btn-outline-accelerated:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-accelerated.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-}
-
-.btn-accelerated {
-  color: #fff;
-  background-color: #fd7338;
-  border-color: #fd7338;
-}
-
-.btn-accelerated:hover {
-  color: #fff;
-  background-color: #ec6227;
-  border-color: #ec6227;
-}
-
-.btn-accelerated:focus, .btn-accelerated.focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-}
-
-.btn-accelerated.disabled, .btn-accelerated:disabled {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-.btn-accelerated:not(:disabled):not(.disabled):active, .btn-accelerated:not(:disabled):not(.disabled).active,
-.show > .btn-accelerated.dropdown-toggle {
-  color: #fff;
-  background-color: #0062cc;
-  border-color: #005cbf;
-}
-
-.btn-accelerated:not(:disabled):not(.disabled):active:focus, .btn-accelerated:not(:disabled):not(.disabled).active:focus,
-.show > .btn-accelerated.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-}
-
-.headshots ul {
-  text-align: center;
-  list-style: none;
-  flex-direction: row;
-}
-
-.headshots ul li {
-  display: inline-block;
-  margin-left: 140px;
-}
-
-.headshots ul li:first-child {
-  margin-left: 0px;
-} 
-
-.headshots ul li img {
-  max-width: 250px;
-  height: auto;
-  margin-bottom: 0.8em;
-}
-
-div.headshots {
-  margin-top: -2em;
-  padding-bottom: 1em;
-}
-
-.services form {
-  margin-top: -3em;
-}
-
-    </style>
   </head>
   <body>
     <div class="container sticky-top navcontainer">
       <nav class="navbar navbar-expand-sm navbar-light sticky-top">
         <div class="navbar-header">
-          <!-- XXX: replace logo with higher resolution -->
-          <a class="navbar-brand" href="/"><img src="AT-logo-black-med.png" alt="Accelerated Tech"></a>
+          <a class="navbar-brand" href="/"><img src="at-web-logo.png" alt="Accelerated Tech"></a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
-            <li class="nav-item"><a class="nav-link" href="#who">About</a></li>
+            <li class="nav-item"><a class="nav-link d-none d-md-inline-block" href="#solutions">Solutions</a></li>
+            <li class="nav-item"><a class="nav-link d-none d-md-inline-block" href="#who">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -342,31 +36,54 @@ div.headshots {
         </section>
       </div></div>
       <div class="row minihero lighter"><div class="col-12 col-xl-10 offset-xl-1">
-        <h2>Accelerated Tech helps you solve your low-level engineering
-        problems with expert knowledge.</h2>
+        <h2>Accelerated Tech brings our expert knowledge to help you solve
+        your low-level systems engineering challenges.</h2>
       </div></div>
       <div class="row lighter">
-        <div class="col-12 col-md-4 imageholder">
-          <img src="https://via.placeholder.com/400x400">
-          Hardware design
+        <div class="col-12 d-none d-md-block">
+          <img src="hatsketch.png"
+               class="img-fluid" 
+               alt="A person in a hardhat sketching a design.  A person in a
+               hardhat pushing a realized version of that design into a
+               device connected to a monitor; another person in a hardhat is
+               connecting a server-like machine to the monitor.  A fourth
+               hardhat person is working at a laptop, which is connected to
+               the server.">
         </div>
-        <div class="col-12 col-md-4 imageholder">
-          <img src="https://via.placeholder.com/400x400">
-          Hardware and application interconnect
+        <div class="col-12 col-md-4 d-none d-md-block imageholder">
+          hardware design
         </div>
-        <div class="col-12 col-md-4 imageholder">
-          <img src="https://via.placeholder.com/400x400">
-          Software development
+        <div class="col-12 col-md-4 d-none d-md-block  imageholder">
+          application connection
+        </div>
+        <div class="col-12 col-md-4 d-none d-md-block  imageholder">
+          software development
+        </div>
+        <div class="col-12 d-block d-md-none">
+          <img src="hatsketch-vertical.png"
+               class="img-fluid" 
+               alt="A person in a hardhat sketching a design.  A person in a
+               hardhat pushing a realized version of that design into a
+               device connected to a monitor; another person in a hardhat is
+               connecting a server-like machine to the monitor.  A fourth
+               hardhat person is working at a laptop, which is connected to
+               the server.">
+        </div>
+        <div class="col-12 d-block d-md-none imageholder">
+          <br>
+          hardware design,<br>
+          application connection,<br>
+          and software development
         </div>
       </div>
-      <div class="row lighter">
+      <div class="row">
         <div class="col-12 col-xl-10 offset-xl-1">
           <section id="solutions">
            <h2>Services</h2>
           </section>
         </div>
       </div>
-      <div class="row lighter services">
+      <div class="row services">
         <div class="col-12 col-md-6 col-xl-5 offset-xl-1">
           <h3>Custom hardware implementation</h3>
           <p>
@@ -400,69 +117,84 @@ div.headshots {
           </p>
         </div>
       </div>
-      <div class="row lighter">
+      <div class="row">
         <div class="col-12 thebutton">
           <a class="btn btn-outline-accelerated btn-huge" href="#contact" role="button">Tell us
           about your project &gt;</a>
         </div>
       </div>
-      <div class="row">
+      <div class="row lighter">
         <div class="col-12 col-xl-10 offset-xl-1">
           <h2>Technologies</h2>
         </div>
       </div>
-      <div class="row services">
+      <div class="row lighter services">
         <div class="col-12 col-md-6 col-xl-5 offset-xl-1">
           <h3>RISC-V</h3>
           <p>
-            Blah blah blah a processor blah blah blah use it or extend it
-            blah blah blah open solutions blah blah blah.
+            RISC-V is an open-standards processor architecture, scaling all
+            the way from small microcontroller implementations to
+            full-fledged Linux systems.  We can integrate an existing RISC-V
+            core into your design, or extend one to meet your needs.
           </p>
         </div>
         <div class="col-12 col-md-6 col-xl-5">
           <h3>Connectal</h3>
           <p>
-            Blah blah blah <a href="http://www.connectal.org/">Connectal</a> platform makes it
-            easy to connect software to hardware at all stages of development. 
+            <a href="http://www.connectal.org/">Connectal</a> is an
+            open-source hardware/software communication framework.  We can
+            use Connectal to integrate your design at all stages of
+            development.
           </p>
         </div>
         <div class="col-12 col-md-6 col-xl-5 offset-xl-1">
           <h3>Bluespec SystemVerilog</h3>
           <p>
-            Blah blah blah quick design of high-performance custom hardware
-            blah blah blah generates RTL blah blah.
+            Bluespec SystemVerilog is a way to improve design productivity
+            for low-level RTL design.  BSV provides modern typed-language
+            semantic and syntactical improvements over Verilog, while still
+            generating easily readable and debuggable RTL, allowing us to
+            help you build your design even sooner.
           </p>
         </div>
         <div class="col-12 col-md-6 col-xl-5">
-          <h3>High-Level Synthesis</h3>
+          <h3>High-level synthesis</h3>
           <p>
-            High-Level Synthesis, or HLS, is a tool that allows us to
-            quickly iterate on a design.
+            High-level synthesis, or HLS, is a tool that allows for quick
+            iteration on a design.  We can build a framework to let your
+            algorithm to run at its fastest, while still giving you the
+            ease-of-maintainability of specifying it in C++.
           </p>
         </div>
         <div class="col-12 col-md-6 col-xl-5 offset-xl-1">
           <h3>PCIe and NVMe</h3>
           <p>
-            Blah blah blah get data into an FPGA blah blah blah big data
-            blah blah blah IP.
+            PCI-Express (and NVMe flash devices attached that way) are an
+            increasingly popular way to get information in and out of an
+            FPGA, especially for "big data" applications.  Our experience
+            with these standards can connect your application to external
+            devices with ease.
           </p>
         </div>
         <div class="col-12 col-md-6 col-xl-5">
           <h3>Open platforms</h3>
           <p>
-            Blah blah blah Linux kernel development blah blah open platforms
-            blah blah years of experience.
+            Linux, and other open platforms, allow for your application to
+            come together faster than ever before.  We have years of Linux
+            kernel development experience for your application.  We
+            understand the dynamics of open-source communities, and can work
+            with you to build a healthy ecosystem for your open project.
           </p>
         </div>
       </div>
       
-      <div class="row lighter"><div class="col-12 col-xl-10 offset-xl-1">
+      <div class="row"><div class="col-12 col-xl-10 offset-xl-1">
         <section id="who">
           <h2>Who is Accelerated Tech?</h2>
         </section>
       </div></div>
-      <div class="row lighter headshots">
-        <div class="col-6 col-xl-10 offset-xl-1">
+      <div class="row headshots">
+        <div class="col-12 col-xl-10 offset-xl-1">
           <ul class="headshots">
             <li>
               <a href="https://www.linkedin.com/in/jameyhicks">
@@ -479,7 +211,7 @@ div.headshots {
           </ul>
         </div>
       </div>
-      <div class="row lighter"><div class="col-12 col-xl-10 offset-xl-1">
+      <div class="row"><div class="col-12 col-xl-10 offset-xl-1 services">
           <p>
             Jamey and Joshua combine hardware and software skills to build
             accelerated solutions to your problems.  They have a track
@@ -491,7 +223,7 @@ div.headshots {
       
       <div class="row lighter services"><div class="col-12 col-xl-10 offset-xl-1">
         <section id="contact">
-          <h2>Get in touch</h2>
+          <h2>Get in Touch</h2>
         </section>
         <form action="//formspree.io/info@accelerated.tech"
               method="POST" name="sentMessage" id="contactForm" novalidate>
